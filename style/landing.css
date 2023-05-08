@@ -1,0 +1,188 @@
+.landing {
+    height: 200vh;
+    /* border: 1px solid red; */
+}
+
+.landing-view {
+    /* border: 1px solid black; */
+    height: 87vh;
+    display: flex;
+    flex-wrap: wrap;
+    
+
+}
+.landing-image {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.landing-image-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: skewX(-4deg);
+
+
+}
+
+.landing-image-box img {
+    width: 80%;
+    height: 89%;
+    border-radius: 16px;
+    box-shadow: 15px 15px rgba(13, 110, 253, 0.4), 30px 30px rgba(13, 110, 253, 0.1), 10px 10px 90px 1px rgba(13, 110, 253, 0.2);
+    transform: skewX(-4deg);
+    position: relative;
+    animation-name: move;
+
+    animation-duration: 7s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    /* transition: all 3s ease; */
+
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0px,0px);
+        
+    }
+    25%{
+        transform: translate(-5px,-5px);
+
+    }
+    50%{
+        transform: translate(-10px,-10px);
+        
+    }
+    75%{
+        transform: translate(-5px,-5px);
+
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
+
+
+}
+
+
+
+.landing-heading {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.landing-head{
+    width: 100%;
+    height: fit-content;
+}
+
+.landing-btn {
+    margin-top: 65px;
+}
+.land-btn{
+    margin-left: 10px;
+}
+
+.landing-heading .auto-type {
+    color: #0d6efd;
+}
+.auto-intro {
+    color: #0d6efd;
+}
+.landing-intro{
+    height: 113vh;
+    display: flex;
+    /* border: 1px solid red; */
+    padding: 20px;
+    flex-wrap: wrap-reverse;
+}
+.landing-intro-heading{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+
+}
+.landing-intro-image{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid yellow; */
+
+}
+.landing-intro-image-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transform: skewX(-4deg); */
+}
+.landing-intro-image-box img {
+    width: 90%;
+    height: 67%;
+    border-radius: 16px;
+    box-shadow: 15px 15px rgba(13, 110, 253, 0.4), 30px 30px rgba(13, 110, 253, 0.1), 10px 10px 90px 1px rgba(13, 110, 253, 0.2);
+    transform: skewX(-4deg);
+    position: relative;
+    animation-name: move;
+    
+    animation-duration: 7s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    /* transition: all 3s ease; */
+
+}
+.heading-intro-headtext{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.heading-intro-headtext q{
+    color: rgba(0, 0, 0, 0.6);
+}
+.into-text{
+    margin-top: 10px;
+    /* line-height: 5px; */
+    font-size: 18px;
+    font-family: 'Tilt Neon', cursive;
+
+}
+@media only screen and (max-width: 950px) {
+    
+    .landing-view{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        /* flex-direction: column; */
+    }
+    .landing-image{
+        display: block;
+        width: 70%;
+    }
+    .landing-heading{
+        display: flex;
+        width: 70%;
+        justify-content: center;
+        /* align-items: center; */
+    }
+    
+}
